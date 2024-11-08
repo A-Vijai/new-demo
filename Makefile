@@ -1,5 +1,5 @@
 $(info [Makefile] Loading commons variables from env/base.env ...)
-include env/base.env
+
 
 terraform-init:
 	terraform init -backend-config="bucket=${AWS_BUCKET_NAME}" -backend-config="key=${AWS_BUCKET_KEY_NAME}" -backend-config="region=${AWS_REGION}"
