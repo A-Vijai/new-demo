@@ -43,7 +43,7 @@ jobs:
         id: init
         env:
           AWS_BUCKET_NAME: my-terraform-infra-project
-          AWS_BUCKET_KEY_NAME: my-terraform-infra-project
+          AWS_BUCKET_KEY_NAME: terraform.tfstate
         run: make terraform-init
 
       - name: Terraform Validate
